@@ -1,0 +1,228 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".ApplicantActivity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient_top" >
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/caption_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/caption_employer"
+            android:textSize="@dimen/caption" />
+        
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView4"
+                style="@style/title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/main_info"
+                android:textSize="@dimen/title"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView2"
+                style="@style/text_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/full_name"
+                android:textSize="@dimen/text" />
+
+            <TextView
+                android:id="@+id/tvFullName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text" />
+
+            <TextView
+                android:id="@+id/textView3"
+                style="@style/text_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/birthdate"
+                android:textSize="@dimen/text" />
+
+            <TextView
+                android:id="@+id/tvBirthdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text" />
+
+            <TextView
+                android:id="@+id/TextView01"
+                style="@style/text_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/sex"
+                android:textSize="@dimen/text" />
+
+            <TextView
+                android:id="@+id/tvSex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text" />
+
+            <TextView
+                android:id="@+id/textView5"
+                style="@style/title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/job"
+                android:textSize="@dimen/title"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/TextView02"
+                style="@style/text_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/position"
+                android:textSize="@dimen/text" />
+
+            <TextView
+                android:id="@+id/tvPosition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text" />
+
+            <TextView
+                android:id="@+id/TextView03"
+                style="@style/text_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/salary"
+                android:textSize="@dimen/text" />
+
+            <TextView
+                android:id="@+id/tvSalary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text" />
+
+            <TextView
+                android:id="@+id/textView6"
+                style="@style/title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/contacts"
+                android:textSize="@dimen/title"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/TextView04"
+                style="@style/text_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/phone"
+                android:textSize="@dimen/text" />
+
+            <TextView
+                android:id="@+id/tvPhone"
+                style="@style/link_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text"
+                android:onClick="callPhone"
+                android:clickable="true" />
+
+            <TextView
+                android:id="@+id/TextView05"
+                style="@style/text_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/email"
+                android:textSize="@dimen/text" />
+
+            <TextView
+                android:id="@+id/tvEmail"
+                style="@style/link_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text"
+                android:onClick="sendEmail"
+                android:clickable="true" />
+            
+            <TextView
+                android:id="@+id/textView07"
+                style="@style/title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/reply_to_applicant"
+                android:textSize="@dimen/title"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etReply"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:duplicateParentState="true"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                android:lines="5"
+                android:scrollbars="vertical"
+                android:textSize="@dimen/text" >
+
+            </EditText>
+            
+            <LinearLayout
+                android:id="@+id/llEmptyField"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                	android:id="@+id/tvEmptyFieldsCaption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tvEmptyFields"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dip"
+                android:paddingTop="8dip" >
+
+                <Button
+                    android:id="@+id/sendReply"
+                    style="@style/button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/button"
+                    android:text="@string/send_reply"
+                    android:onClick="sendReply" />
+
+            </RelativeLayout>
+            
+        </LinearLayout>
+
+    </ScrollView>
+    
+</LinearLayout>

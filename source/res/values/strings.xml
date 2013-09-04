@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Тестовое задание HeadHunter</string>
+    <string name="menu_settings">Settings</string>
+    <string name="full_name">Фамилия Имя Отчество</string>
+    <string name="birthdate">Дата рождения</string>
+    <string name="empty_birthdate">__.__.____</string>
+    <string name="sex">Пол</string>
+    <string name="position">Должность</string>
+    <string name="salary">Зарплата</string>
+    <string name="phone">Телефон</string>
+    <string name="email">E-mail</string>
+    <string name="send_resume">Отправить резюме</string>
+    <string name="send_reply">Отправить ответ</string>
+    <string name="caption_applicant">Соискатель</string>
+    <string name="contacts">Контанктные данные</string>
+    <string name="main_info">Основная информация</string>
+    <string name="job">Желаемая работа</string>
+    <string name="caption_employer">Работодатель</string>
+    <string name="male">мужской</string>
+    <string name="female">женский</string>
+    <string name="empty_fields">Необходимо заполнить:</string>
+    <string name="reply_by_employer">Ответ работодателя</string>
+    <string name="reply_to_applicant">Ответ соискателю</string>
+    <string-array name="sex_array">
+        <item>мужской</item>
+    	<item>женский</item>
+    </string-array>
+
+</resources>
